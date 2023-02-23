@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    background-color: #1c79b8;
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin:  0 auto;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1 {
+    font-style: italic;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+header li:hover {
+    color: #eee;
+}
+
+.sobre {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 32.3% 65.6%;
+    column-gap: 2%;
+    margin-bottom: 64px;
+}
+
+p {
+    font-size: 0.8em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: #1c79b8;
+    font-style: italic;
+    padding-bottom: 16px;
+    border-bottom: solid 2px #1c79b8;
+    margin-bottom: 32px;
+}
+
+.sobreALoja p {
+    font-size: 1em;
+}
+
+.listaProdutos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 1.4em;
+}
+
+.listaProdutos button {
+    margin-top: 16px;
+    margin-bottom: 50px;
+    padding: 8px;
+    border: none;
+    background-color: #1c79b8;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+.listaProdutos button:hover {
+    background-color: #7396ad; 
+}
+
+@media screen and (min-width: 641px) and  (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .sobre p {
+        width: 100%;
+    }
+
+    .listaProdutos {
+        display: grid;
+        grid-template-columns: repeat(2, 44%);
+        row-gap: 1%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .sobre {
+        display: block;
+    }
+
+    .sobre img {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .sobre p {
+        width: 100%;
+    }
+
+    .listaProdutos {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1%;
+    }
+}
